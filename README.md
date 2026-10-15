@@ -27,6 +27,7 @@ Starting from the original project, I made my own version:
 
 - **'guidance_system.m'**: I rewrote the parameter script step by step and documented every part. It covers the state-space model, the transfer function and pole analysis, the LQR design, the Kalman filter design and observer stability, the haversine distance, and the initial azimuth and flight-path angle. I also fixed the latitude used in the haversine formula.
 - **'Simulink_guidance_true2_FG.slx'**: I rebuilt the Simulink model. It contains the state-space plant, LQR feedback on the Kalman estimate, process and measurement noise, the guidance loop (range and flight-path-angle command), the obstacle distance and warning flag, the flat-Earth to LLA conversion, the FlightGear interface, and an automatic stop when the missile reaches the target altitude.
+- **'Mode.STL'**: AASM HAMMER 250 --- Exterior 3D model (Self interpretation)
 
 ## Repository structure
 [WORK IN PROGRESS]
