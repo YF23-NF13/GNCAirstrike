@@ -86,7 +86,7 @@ d2r = pi/180 ; % degrees to radians
 %% Convert to radians 
 l1 = Lat_init*d2r ; 
 u1 = Lon_init*d2r ;
-l2 = Lon_target*d2r; 
+l2 = Lat_target*d2r;
 u2 = Lon_target*d2r;
 
 dl = l2 - l1 ;
