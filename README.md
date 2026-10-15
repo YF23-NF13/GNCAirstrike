@@ -41,7 +41,17 @@ Starting from the original project, I made my own version:
 [WORK IN PROGRESS]
 Requirements: MATLAB and Simulink with the Control System Toolbox, the Mapping Toolbox (`azimuth`) and the Aerospace Blockset (flat-Earth/LLA conversion and FlightGear blocks).
 
-
+## Note 
+If you have the following error while running the simulink file : 
+"Unable to determine the default toolchain. 
+Default toolchain (short name:Microsoft Visual C++ 2026 (C)) is not listed in the Toolchain registry.   
+Ungroup 4 similar"
+Do the following on your actual version of Matlab : 
+1. Go to Add-Ons
+2. Select Explore Add-Ons
+3. Search “MinGW-w64”
+4. Install “MATLAB Support for MinGW-w64 C/C++/Fortran Compiler”.
+5. Run the simulink file, it should work :) 
 
 ## Author
 
