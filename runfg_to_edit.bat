@@ -1,0 +1,3 @@
+SET FG_ROOT=C:\Users\%USER PROFIL%\FlightGear\Downloads\fgdata_2024_1
+SET FG_SCENERY=C:\Users\% USER PROFIL%\FlightGear\Downloads\TerraSync
+"C:\Program Files\FlightGear 2024.1\bin\fgfs.exe" --fg-root="%FG_ROOT%" --fg-aircraft="C:\Users\natha\FlightGear\Custom Aircraft" --aircraft=HL22 --terrasync-dir="%FG_SCENERY%" --enable-terrasync --fdm=null --enable-auto-coordination --native-fdm=socket,in,30,localhost,5502,udp --fog-disable --enable-clouds3d --start-date-lat=2004:06:01:11:00:00 --enable-sound --visibility=15000 --in-air --prop:/engines/engine0/running=true --disable-freeze --airport=KMIA --runway=06 --altitude=8000 --heading=0 --offset-distance=0 --offset-azimuth=0
