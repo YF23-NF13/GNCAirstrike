@@ -1,4 +1,4 @@
-# GNCAirstrike: missile guidance with an LQR/LQG pitch autopilot
+# [WORK IN PROGRESS]GNCAirstrike: missile guidance with an LQR/LQG pitch autopilot
 
 > **This repository is a fork of [Vinayak-D/GNCAirstrike](https://github.com/Vinayak-D/GNCAirstrike).**
 > The original idea and code belong to its author, Vinayak D. The `main` branch holds **my own version** of the project. The author's original files are kept, unchanged, on the [`master`](https://github.com/YF23-NF13/GNCAirstrike/tree/master) branch.
