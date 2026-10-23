@@ -80,7 +80,7 @@ m2f = 3.2811; % meters to feet
 %% target location 
 Lat_target = 34.6624 ; % Lake 
 Lon_target = -118.7629 ; % Lake
-%Lat_target = 34.6374 ; %Airforce plant 42
+%Lat_target = 34.6374 ; % Airforce plant 42
 %Lon_target = -118.0834 ;
 Elev_target = 800; % m  - MSL (height)
 
@@ -90,8 +90,8 @@ Lon_init = -119.4573;
 Elev_init = 10000; % m p - MSL
 
 %% Obstacle location 
-%Lat_obs = 34.61916 ; petite montagne 
-%Lon_obs = -118.8429 ; petie montagne 
+%Lat_obs = 34.61916 ; small mountain 
+%Lon_obs = -118.8429 ; small mountain
 Lat_obs = 34.608485 ;
 Lon_obs = -118.867712 ;
 
