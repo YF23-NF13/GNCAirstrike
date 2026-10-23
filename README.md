@@ -25,17 +25,19 @@ The original repository has no license, so all rights to the original code remai
 [WORK IN PROGRESS]
 Starting from the original project, I made my own version:
 
-- **'guidance_system.m'**: I rewrote the parameter script step by step and documented every part. It covers the state-space model, the transfer function and pole analysis, the LQR design, the Kalman filter design and observer stability, the haversine distance, and the initial azimuth and flight-path angle. I also fixed the latitude used in the haversine formula.
-- **'Simulink_guidance_true2_FG.slx'**: I rebuilt the Simulink model. It contains the state-space plant, LQR feedback on the Kalman estimate, process and measurement noise, the guidance loop (range and flight-path-angle command), the obstacle distance and warning flag, the flat-Earth to LLA conversion, the FlightGear interface, and an automatic stop when the missile reaches the target altitude.
+- **'gnc_model.m'**: I rewrote the parameter script step by step and documented every part. It covers the state-space model, the transfer function and pole analysis, the LQR design, the Kalman filter design and observer stability, the haversine distance, and the initial azimuth and flight-path angle. I also fixed the latitude used in the haversine formula.
+- **'gnc_model_flight_gear.slx'**: I rebuilt the Simulink model. It contains the state-space plant, LQR feedback on the Kalman estimate, process and measurement noise, the guidance loop (range and flight-path-angle command), the obstacle distance and warning flag, the flat-Earth to LLA conversion, the FlightGear interface, and an automatic stop when the missile reaches the target altitude.
+- **'gnc_model.slx'**: Similar file as **'gnc_model_flight_gear.slx'** but without the FlightGear interface. It allows the user to have a visualization of flight parameters such as Angle of Attack (AoA), Flight Path Angle (FPA) during simulation.
 - **'Mode.STL'**: AASM HAMMER 250 --- Exterior 3D model (Self interpretation)
 
 ## Repository structure
 [WORK IN PROGRESS]
 | File | Description |
 |---|---|
-| 'guidance_system.m' | Parameters: missile model, LQR and Kalman gains, initial geometry. Run it first. |
-| 'Simulink_guidance_true2_FG.slx` | Simulink model of the full GNC loop |
-| 'runfg_to_edit.bat | Batch file to launch the right configuration of Flightgear for the simulation
+| 'gnc_model.m' | Parameters: missile model, LQR and Kalman gains, initial geometry. Run it first. |
+| 'runfg_to_edit_flightgear.bat' | Batch file to launch the right configuration of Flightgear for the simulation. Run it after the 'gnc_model.m'. It will open FlightGear
+| 'gnc_model_flight_gear.slx` | Simulink model of the full GNC loop. Run it after the 'runfg_to_edit_flightgear.bat' file, it will launch the simulation. |
+
 | 'HL22.zip' | contains all the files to transfer the CAD file to a 3D object in FlightGear
 
 ## How to run
