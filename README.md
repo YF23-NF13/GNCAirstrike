@@ -58,4 +58,4 @@ Do the following on your actual version of Matlab :
 
 ## Author
 
-[@YF23-NF13](https://github.com/YF23-NF13): my version of the project (the two files above and this README).
+[@YF23-NF13](https://github.com/YF23-NF13): my version of the project (the files above and this README).
